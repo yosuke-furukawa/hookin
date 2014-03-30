@@ -1,0 +1,26 @@
+{
+  "name": "hookin",
+  "version": "0.1.0",
+  "description": "npm install or bower install if package.json changed, when git pull ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "bin": {
+    "hookin": "bin/hookin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yosuke-furukawa/hookin"
+  },
+  "keywords": [
+    "git",
+    "hook"
+  ],
+  "author": "yosuke-furukawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yosuke-furukawa/hookin/issues"
+  },
+  "homepage": "https://github.com/yosuke-furukawa/hookin"
+}
