@@ -24,15 +24,6 @@ $ hookin bower.json "bower install && bower prune"
 $ hookin .scss "compasss compile"
 ```
 
-```shell
-// hookin has default commands.
-$ hookin
-// this command is same the following commands
-$ hookin package.json "npm install && npm prune"
-$ hookin bower.json "bower install && bower prune"
-```
-
-
 CREDITS
 ===================
 

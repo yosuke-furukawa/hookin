@@ -15,6 +15,11 @@ var error = function(message) {
   process.exit(1);
 };
 
+var usage = function() {
+  console.log("USAGE: hookin <watch file> <exec command>");
+  process.exit(1);
+};
+
 var existsKeyword = function(keyword) {
   var exists = fs.existsSync(postMergePath);
   if (!exists) return false;
@@ -35,6 +40,7 @@ var writeCommand = function(watchFileName, command) {
     command:command,
   });
   fs.appendFileSync(postMergePath, line);
+  console.log(" checkfile :   ".green + watchFileName.green + " command : ".green + command.green);
 };
 
 var writeChecker = function() {
@@ -42,6 +48,7 @@ var writeChecker = function() {
     var checker = fs.readFileSync(srcFilePath);
     fs.appendFileSync(postMergePath, checker);
     fs.chmodSync(postMergePath, 0755);
+    console.log(postMergePath.blue + " is created.".blue);
   }
 };
 
@@ -49,11 +56,12 @@ if (!fs.existsSync(hooksPath)) {
   error(hooksPath.red + " not found. call git init, before hookin".red);
 }
 
+
 if (process.argv.length < 3) {
-  writeChecker();
-  writeCommand("package.json", "npm install && npm prune");
-  writeCommand("bower.json", "bower install && bower prune");
-  process.exit(0);
+  if (process.argv[2] === "-h" || process.argv[2] === "--help") {
+    usage();
+  }
+  usage();
 }
 
 var hookfile = process.argv[2];
