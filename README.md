@@ -1,4 +1,4 @@
-hookin
+hookin [![Build Status](https://travis-ci.org/yosuke-furukawa/hookin.svg?branch=master)](https://travis-ci.org/yosuke-furukawa/hookin)
 ================
 
 Would you like to call "npm install" when package.json is changed?
