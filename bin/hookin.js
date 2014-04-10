@@ -57,7 +57,7 @@ if (!fs.existsSync(hooksPath)) {
 }
 
 
-if (process.argv.length =< 3) {
+if (process.argv.length <= 3) {
   if (process.argv[2] === "-h" || process.argv[2] === "--help") {
     usage();
   }
