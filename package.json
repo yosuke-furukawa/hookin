@@ -1,6 +1,6 @@
 {
   "name": "hookin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "npm install or bower install if package.json changed, when git pull ",
   "main": "index.js",
   "scripts": {
