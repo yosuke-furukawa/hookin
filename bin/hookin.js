@@ -53,7 +53,7 @@ var writeCommand = function(watchFileName, command) {
 
 var removeCommand = function(watchFileName) {
   clearExistsCommand(watchFileName);
-  console.log(watchFileName.green + "'s hook is removed".green);
+  console.log(" checkfile :   ".green + watchFileName.green + "'s hook is removed".green);
 };
 
 var writeChecker = function() {
