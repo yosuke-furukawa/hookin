@@ -25,6 +25,10 @@
   "homepage": "https://github.com/yosuke-furukawa/hookin",
   "dependencies": {
     "colors": "~0.6.2",
-    "lodash": "~2.4.1"
+    "lodash": "~2.4.1",
+    "commander": "^2.2.0"
+  },
+  "devDependencies": {
+    "async": "^0.7.0"
   }
 }

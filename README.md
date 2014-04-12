@@ -22,6 +22,9 @@ USAGE:
 $ hookin package.json "npm install && npm prune"
 $ hookin bower.json "bower install && bower prune"
 $ hookin .scss "compasss compile"
+
+# Remove hook
+$ hookin --uninstall package.json
 ```
 
 CREDITS
