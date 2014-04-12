@@ -20,7 +20,7 @@ async.waterfall([
     hookin.stderr.pipe(process.stderr);
   },
   function(next){
-    var hookin = child_process.spawn("bin/hookin.js", ['test.js', 'npm install && npm test'])
+    var hookin = child_process.spawn("bin/hookin.js", ['test.js', 'npm install && npm test']);
     hookin.on("close", function(code) {
       assert.equal(code, 0);
       var postmerge = "" + fs.readFileSync(process.env.HOOKSPATH + "/post-merge");
@@ -33,7 +33,7 @@ async.waterfall([
     hookin.stderr.pipe(process.stderr);
   },
   function(next){
-    var hookin = child_process.spawn("bin/hookin.js", ['-u','test.js'])
+    var hookin = child_process.spawn("bin/hookin.js", ['-u','test.js']);
     hookin.on("close", function(code) {
       assert.equal(code, 0);
       var postmerge = "" + fs.readFileSync(process.env.HOOKSPATH + "/post-merge");
