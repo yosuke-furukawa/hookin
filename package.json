@@ -29,6 +29,6 @@
     "commander": "^6.0.0"
   },
   "devDependencies": {
-    "async": "^0.7.0"
+    "async": "0.7.0"
   }
 }
